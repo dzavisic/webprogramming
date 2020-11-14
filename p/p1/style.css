@@ -1,0 +1,32 @@
+html, body {
+    background: lightgray;
+    font-family: 'Roboto';
+}
+
+ol li {
+    background: black;
+    color: white;
+}
+
+li.listitem {
+    color: red;
+
+}
+li.listitem#zadnji {
+    text-decoration: underline;
+}
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+thead {
+    background: dodgerblue;
+    color: white;
+}
+th, td {
+    width: 100px;
+    text-align: center;
+}
