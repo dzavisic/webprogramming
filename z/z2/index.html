@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventura</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="#" />
+</head>
+<body>
+    <div id="container">
+        
+        <div id="side1">
+            <div id="inventura">
+                <img src="./assets/img/Ok.svg" id = "ok" alt="">
+                <h2 id = "inv">Inventura</h2>
+            </div>
+            <ul id="popis">
+            </ul>
+        </div>
+
+        <div id="side2">
+            <div id="godina">
+                <h2 id="godtxt">2016. godina</h2>
+            </div>
+            <div id="sort">
+
+            </div>
+            <div id="prostorije">
+                <ul id="prost">
+                    
+                </ul>
+            </div>
+        </div>
+        <div id="content">
+            <div id="header">
+                <h1 id="nazivPred">
+                   Predavaonica 3
+                </h1>
+                <a href="#" id="spremi">
+                    Spremi
+                </a>
+            </div>
+            <table id = "tab1">
+				<thead>
+					<tr>
+						<th>Datum inverture:</th>
+						<th>Pregledao:</th>		
+						<th>Broj potvrda:</th>
+					</tr>
+				<thead>
+
+				<tbody>
+
+					<tr>
+						<td>02.03.2016. 11:13</td>
+						<td>Neil Armstrong</td>		
+						<td>2</td>
+					</tr>
+					<tr>
+						<td>02.03.2016. 11:13</td>
+						<td>Buzz Aldrin</td>		
+						<td>3</td>
+					</tr>
+				</tbody>
+
+			</table>
+			<table id = "tab2">
+				<thead>	
+					<tr>
+						<th>Zadnja promjena:</th>
+						<th>Promijenio:</th>		
+						<th>Broj promjena:</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>01.03.2016. 11:13</td>
+						<td>Pete Conrad</td>		
+						<td>1</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<table id = "tab3">
+				<thead>
+					<tr>
+						<th id = "naziv">Naziv</th>
+						<th id = "ocekivano">Očekivano</th>
+						<th id = "stanje">Stanje</th>
+						<th id = "uredi">Uredi</th>
+						<th id = "potvrdi">Potvrdi</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td>Stolica</td>
+						<td>45</td>
+						<td>45</td>
+						<td id = "edit"><img src = "assets/img/Edit.svg" width="20" height="20" /></td>
+						<td><input type="checkbox" id="checkbox1" class="regular-checkbox" checked = "true" /><label for="checkbox1"></label></td>
+					</tr>
+
+					<tr>
+						<td>Školska ploča</td>
+						<td>1</td>
+						<td>1</td>
+						<td id = "edit"><img src = "assets/img/Edit.svg" width="20" height="20" /></td>
+						<td><input type="checkbox" id="checkbox2" class="regular-checkbox" checked = "true" /><label for="checkbox2"></label></td>
+					</tr>
+
+					<tr>
+						<td>Stol za katedrom</td>
+						<td>1</td>
+						<td>1</td>
+						<td id = "edit"><img src = "assets/img/Edit.svg" width="20" height="20" /></td>
+						<td><input type="checkbox" id="checkbox3" class="regular-checkbox" /><label for="checkbox3"></label></td>
+					</tr>
+
+					<tr>
+						<td>Projektor</td>
+						<td>1</td>
+						<td>1</td>
+						<td id = "edit"><img src = "assets/img/Edit.svg" width="20" height="20" /></td>
+						<td><input type="checkbox" id="checkbox4" class="regular-checkbox" /><label for="checkbox4"></label></td>
+					</tr>
+
+					<tr>
+						<td>Grb</td>
+						<td>1</td>
+						<td>1</td>
+						<td id = "edit"><img src = "assets/img/Edit.svg" width="20" height="20" /></td>
+						<td><input type="checkbox" id="checkbox5" class="regular-checkbox" /><label for="checkbox5"></label></td>
+					</tr>
+				</tbody>
+			</table>
+        </div>
+    </div>
+    <script src="./assets/js/fillMenu.js"></script>
+	<script src="./assets/js/fillRooms.js"></script>
+	<script src="./assets/js/domPaths.js"></script>
+</body>
+</html>
