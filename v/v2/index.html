@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#" />
+    <title>Document</title>
+</head>
+<body> <!--<body onload="checkCookies()">-->
+    <!--
+    <h2 id="naslov">Naslov</h2>
+    <button onclick="changeColor1()">Preko putanje</button>
+    <button onclick="changeColor2()">Preko taga</button>
+    <button onclick="changeColor3()">Preko id</button>
+    <button onclick="addChild()">Add</button>
+    <button onclick="removeChild1()">Remove</button>
+
+    <div id="div" style="background-color: red; width: 100px; height: 100px;"
+             onmouseover="changeColorToBlue()" onmouseleave="changeColorToRed()"></div>
+
+    <span id="span"></span><input onchange="changeSpanText()" type="text" id="input">
+    -->
+
+    <!--
+    <ul id="list">
+
+    </ul>
+    <input type="text" id="input">
+    <button onclick="addToList()">Add</button>
+    -->
+
+    <div id="clock"></div>
+    <div id="odbrojavanje">10</div>
+    <div id="countdown">10</div>
+    
+    <script>
+        const interval = setInterval(() => {
+            const date = new Date();
+            document.getElementById('clock').innerHTML = `${date.getHours() < 10 ? '0' + date.getHours() : date.getHours()}:
+                                                    ${date.getMinutes() < 10 ? '0' + date.getMinutes() : date.getMinutes()}:
+                                                    ${date.getSeconds() < 10 ? '0' + date.getSeconds() : date.getSeconds()}`
+        }, 1000);
+
+        let MOJNACIN;
+        let brojac = 0;
+        const interval2 = setInterval(() => {
+            brojac=brojac+1;
+            if(brojac <= 10)
+                document.getElementById('odbrojavanje').innerHTML = document.getElementById('odbrojavanje').innerHTML - 1;
+        }, 1000);
+
+        let NJEGOVNACIN;
+        const interval3 = setInterval(() => {
+            const countdown = document.getElementById('countdown');
+            countdown.innerHTML = parseInt(countdown.innerHTML) - 1;
+            if(countdown.innerHTML == 0){
+                clearInterval(interval3);
+            }
+        }, 1000);
+
+
+
+        function addToList(){
+            const input = document.getElementById('input');
+            const li = document.createElement('li');
+            li.innerHTML = input.value;
+            document.getElementById('list').appendChild(li);
+            input.value = "";
+        }
+
+        function checkCookies(){
+            if(navigator.cookieEnabled == true){
+                const span = document.createElement('span');
+                div.innerHTML = 'Kolačići su omogućeni!';
+                document.getElementsByTagName('body')[0].appendChild(div);
+            }
+            else {
+                const span = document.createElement('span');
+                div.innerHTML = 'Kolačići su onemogućeni!';
+                document.getElementsByTagName('body')[0].appendChild(div);
+            }
+        }
+
+        function changeSpanText(){
+            document.getElementById('span').innerHTML = document.getElementById('input').value.toUpperCase();
+        }
+
+        function changeColor1() {
+            console.log(document);
+            document.lastChild.children[1].children [0].setAttribute('style', 'color: red');
+        }
+
+        function changeColor2(){
+            document.getElementsByTagName('h2')[0].setAttribute('style', 'color: blue');
+        }
+
+        function changeColor3(){
+            document.getElementById('naslov').setAttribute('style', 'color:green');
+        }
+
+        function addChild(){
+            const div = document.createElement('div');
+            div.innerHTML = 'tekst';
+            document.getElementsByTagName('body')[0].appendChild(div);
+        }
+
+        function removeChild1(){
+            const body = document.getElementsByTagName('body')[0];
+            body.removeChild(body.lastChild);
+        }
+
+        function changeColorToBlue(){
+            document.getElementById('div').style.backgroundColor = 'blue';
+        }
+        function changeColorToRed(){
+            document.getElementById('div').style.backgroundColor = 'red';
+        }
+        
+    </script>
+</body>
+</html>

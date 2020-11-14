@@ -1,0 +1,121 @@
+html, body, div, span, applet, object, iframe, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    font-family: 'Roboto', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html, body {
+    
+    height: 100%;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+nav {
+    background-color: teal;
+    flex: 0.05;
+    display: flex;
+}
+.content {
+    background-color: white;
+    flex: 0.90;
+    display: flex;
+}
+footer {
+    background-color: rgba(0,0,0,0.87);
+    flex: 0.05;
+}
+
+.sidebar {
+    background-color: darkgray;
+    flex: 1;
+}
+.text {
+    flex: 14;
+}
+
+.profile {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navigation {
+    flex: 15;
+}
+.navigation > ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.navigation > ul > li {
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.navigation >ul > li > a {
+    text-decoration: none;
+    color: white;
+    font-size: 130%;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: inline-block;
+}
+a.active {
+    color: rgb(0, 71, 71) !important;
+}
+li.active {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+footer {
+    color: white;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+footer > img {
+    padding-left: 10px;
+    padding-right: 10px;
+}

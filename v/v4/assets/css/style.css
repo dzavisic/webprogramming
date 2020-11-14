@@ -1,0 +1,57 @@
+nav{
+    opacity: 0.8;
+    border-bottom: 3px solid #008ed6;
+}
+#home {
+    background-image: url("../img/home.jpg");
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+}
+
+.overlay{
+    flex: 1;
+    background-color: rgba(0,0,0,0.7); 
+    padding-top: 150px;
+}
+#home .fa{
+    background-color: white;
+    padding: 4px;
+    color: #008ed6;
+    border-radius: 5px;
+    font-size: 30px !important;
+}
+.explore-head{
+    background-color: #333;
+}
+
+#explore .fa{
+    background-color: #333;
+    padding: 4px;
+    color: white;
+    border-radius: 5px;
+    font-size: 30px !important;
+}
+
+#create .fa{
+    background-color: white;
+    padding: 4px;
+    color: #008ed6;
+    border-radius: 5px;
+    font-size: 30px !important;
+}
+
+#share .fa{
+    background-color: #333;
+    padding: 4px;
+    color: white;
+    border-radius: 5px;
+    font-size: 30px !important;
+}
+#footer button {
+    background-color: #008ed6;
+}
+#footer button:hover {
+    background-color: white;
+    color: #008ed6;
+}

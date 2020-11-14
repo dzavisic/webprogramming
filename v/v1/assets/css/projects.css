@@ -1,0 +1,28 @@
+.content-container{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+input, textarea {
+    border: 2px solid darkgray;
+    border-radius: 2px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+button {
+    width: 15%;
+    border: 2px solid rgb(108,165,231);
+    border-radius: 4px;
+    background-color: white;
+    color: rgb(108,165,231);
+}
+
+button:hover {
+    background-color: rgb(35, 71, 112);
+    color: rgb(158, 191, 228);
+    cursor: pointer;
+}

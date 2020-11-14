@@ -1,0 +1,53 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body{
+    background-color: #ebfcfe;
+}
+
+.toolbar{
+    height: 100px;
+    background: linear-gradient(to right, #fc03fc, #03fcf8);
+    color: white;
+    font-size: 200%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-container{
+    display: flex;
+    height: calc(100% - 100px);
+    justify-content: center;
+}
+
+.content{
+    padding: 20px;
+    width: 50%;
+}
+
+.todo{
+    margin-top: 10px;
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.done{
+    color: #adefd1ff;
+}
+.delete{
+    color: #ed2e88ff;
+}
+
+.edit{
+    color: #00203fff;
+}
+
+.done:hover, .delete:hover, .edit:hover{
+    cursor: pointer;
+}

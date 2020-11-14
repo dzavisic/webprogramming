@@ -1,0 +1,10 @@
+.keanu {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.content-container {
+    padding: 15px;
+}
