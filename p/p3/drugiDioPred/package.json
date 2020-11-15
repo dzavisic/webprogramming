@@ -1,0 +1,19 @@
+{
+  "name": "drugidiopred",
+  "version": "1.0.0",
+  "description": "Moj prvi projekt",
+  "main": "index.js",
+  "scripts": {
+    "pokreni": "node index.js",
+    "pokreni_i_gledaj": "nodemon index.js",
+    "pokreni_na_linuksu": "",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dario",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jquery": "^3.5.1",
+    "nodemon": "^2.0.6"
+  }
+}
